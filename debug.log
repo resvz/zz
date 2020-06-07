@@ -1,0 +1,14 @@
+{"name":"hexo","hostname":"DESKTOP-1LO5V0H","pid":6376,"level":20,"msg":"Writing database to C:\\DATA\\zzzlx/db.json","time":"2020-05-31T09:07:00.608Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-1LO5V0H","pid":6376,"level":20,"msg":"Hexo version: \u001b[35m4.2.1\u001b[39m","time":"2020-05-31T09:07:00.623Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-1LO5V0H","pid":6376,"level":20,"msg":"Working directory: \u001b[35mC:\\DATA\\zzzlx\\\u001b[39m","time":"2020-05-31T09:07:00.623Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-1LO5V0H","pid":6376,"level":20,"msg":"Config loaded: \u001b[35mC:\\DATA\\zzzlx\\_config.yml\u001b[39m","time":"2020-05-31T09:07:00.743Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-1LO5V0H","pid":6376,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-archive\u001b[39m","time":"2020-05-31T09:07:00.763Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-1LO5V0H","pid":6376,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-deployer-git\u001b[39m","time":"2020-05-31T09:07:00.768Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-1LO5V0H","pid":6376,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-index\u001b[39m","time":"2020-05-31T09:07:00.769Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-1LO5V0H","pid":6376,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-category\u001b[39m","time":"2020-05-31T09:07:00.771Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-1LO5V0H","pid":6376,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-tag\u001b[39m","time":"2020-05-31T09:07:00.772Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-1LO5V0H","pid":6376,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-ejs\u001b[39m","time":"2020-05-31T09:07:00.776Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-1LO5V0H","pid":6376,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-marked\u001b[39m","time":"2020-05-31T09:07:00.819Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-1LO5V0H","pid":6376,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-stylus\u001b[39m","time":"2020-05-31T09:07:00.910Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-1LO5V0H","pid":6376,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-server\u001b[39m","time":"2020-05-31T09:07:01.008Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-1LO5V0H","pid":6376,"level":20,"msg":"Script loaded: \u001b[35mthemes\\suka\\scripts\\index.js\u001b[39m","time":"2020-05-31T09:07:01.031Z","v":0}
