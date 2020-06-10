@@ -4,7 +4,7 @@ git add *
 git commit -m "push"
 git push
 ssh root@resvz.com
-ZHAOzhe0010
+
 cd /home/zzzlx
 git pull
 exit

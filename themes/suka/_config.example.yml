@@ -77,7 +77,7 @@ uiux:
   link_color:
   primary_color:
   # Background color
-  bg_color:
+  bg_color: #1E1E1E
 
 img:
   avatar: '/img/default_avatar.png'
@@ -230,11 +230,11 @@ analytics:
 # Busuanzi
 # The counter by https://busuanzi.ibruce.info
 busuanzi:
-  enable: true
+  enable: false
   # Site views analytics support either pv or uv
   # will be show at footer
   site_uv:
-    enable: true
+    enable: false
     before: # html tag support
     after: Viewers # html tag support
     divider: '|' # html tag supported, something like '|' ',' '·' even '<br>', if you dont want any divider simply leave it blank,
@@ -248,7 +248,7 @@ busuanzi:
   # Post views analytics
   # will be show at post header info
   post_pv:
-    enable: true
+    enable: false
     before: # html tag support
     after: Views # html tag support
 
