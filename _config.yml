@@ -4,18 +4,18 @@
 
 # Site
 title: Hexo
-subtitle: ''
+subtitle: 'zhaozhe blog'
 description: ''
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: zhaozhe
+language: zh-Hans
+timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://www.resvz.com/blog
 root: /blog/
-permalink: :year/:month/:day/:title/
+permalink: :title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -93,5 +93,14 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: suka
 
+suka_theme:
+  search:
+    enable: true
+    path: search.json
+    field: post # Page | Post | All. Default post
+  prism:
+    enable: false
+    line_number: true
+    theme: hemisu-dark
