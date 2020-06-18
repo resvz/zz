@@ -279,6 +279,7 @@ template {
 }
 
 html {
+  background: #1a1a1a;
   box-sizing: border-box;
   font-size: 20px;
   line-height: 1.5;
@@ -286,7 +287,8 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #1a1a1a;
+  /* background: #fff; */
   color: #50596c;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: .8rem;

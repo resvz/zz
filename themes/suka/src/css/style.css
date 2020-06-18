@@ -30,6 +30,7 @@
 
 body,
 html {
+    background: #1a1a1a;
     overflow-x: hidden !important;
     -webkit-font-smoothing: antialiased;
 }
@@ -355,6 +356,7 @@ header .divider {
     min-width: 0;
     word-wrap: break-word;
     background-clip: border-box;
+    background: #1a1a1a;
 }
 
 .post-entry .post-thumbnail {
@@ -1442,7 +1444,7 @@ a.timeline-tile-title span:hover {
 
 .link-item .link-title {
     font-size: .9rem;
-    color: #50596c;
+    color: #cdd5e6;
 }
 
 .link-item .link-descr {
