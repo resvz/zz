@@ -509,6 +509,7 @@ header .divider {
 #post-card .card-header {
     padding: .8rem 1.2rem 2rem;
     border-bottom: .05rem solid #ddd;
+    color:#dfe2e5;
 }
 
 #post-card .post-header-info {
