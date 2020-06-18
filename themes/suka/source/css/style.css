@@ -357,6 +357,7 @@ header .divider {
     word-wrap: break-word;
     background-clip: border-box;
     background: #1a1a1a;
+    color: #dfe2e5;
 }
 
 .post-entry .post-thumbnail {
