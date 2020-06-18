@@ -499,10 +499,10 @@ header .divider {
 #post-card .card-item-container {
     display: flex;
     align-items: center;
+    background: #1a1a1a;
 }
 
 #post-card .card-inner-cell {
-    background: #1a1a1a;
     width: 100%;
 }
 
