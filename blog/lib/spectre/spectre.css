@@ -1539,6 +1539,7 @@ video.video-responsive::before {
 .columns.col-gapless {
   margin-left: 0;
   margin-right: 0;
+  border:1px solid #2f2f2f
 }
 
 .columns.col-gapless > .column {
@@ -3162,9 +3163,9 @@ a.text-error:visited {
   color: #fff;
 }
 
-.bg-gray {
+/* .bg-gray {
   background: #f8f9fa;
-}
+} */
 
 .bg-success {
   background: #32b643;

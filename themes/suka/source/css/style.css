@@ -24,7 +24,8 @@
 
 /**
  * =========================================================
- * ************   Global   ************
+ #1e1e1e
+ 
  * =========================================================
  */
 
@@ -234,7 +235,7 @@ header {
 }
 
 header a {
-    color: #50596c;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -242,7 +243,7 @@ header a:hover,
 header a:focus,
 header a:visited {
     text-decoration: none;
-    color: #50596c;
+    color: #ffffff;
 }
 
 header .divider {
@@ -356,7 +357,7 @@ header .divider {
     min-width: 0;
     word-wrap: break-word;
     background-clip: border-box;
-    background: #1a1a1a;
+    background: #1e1e1e;
     color: #dfe2e5;
 }
 
@@ -383,7 +384,7 @@ header .divider {
 .post-entry a.card-title:hover,
 .post-entry a.card-title:visited,
 .post-entry a.card-title:focus {
-    color: #50596c;
+    color: #ffffff;
     opacity: 1;
     text-decoration: none;
 }
@@ -500,7 +501,7 @@ header .divider {
 #post-card .card-item-container {
     display: flex;
     align-items: center;
-    background: #1a1a1a;
+    background: #1e1e1e;
 }
 
 #post-card .card-inner-cell {
