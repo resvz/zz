@@ -231,7 +231,7 @@ html *::-webkit-scrollbar-thumb {
 /* Only show on the screen width smaller than or equal to 960px. */
 
 header {
-    padding: 3.6rem .4rem 1.8rem;
+    padding: 1rem .4rem 1rem;
 }
 
 header a {
