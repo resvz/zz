@@ -1,0 +1,107 @@
+---
+layout: post
+title:  "Go链接mysql"
+date:   2021-04-05 17:05:30 +0800
+categories: mysql
+---
+## mysql驱动
+学习地址： https://github.com/go-sql-driver/mysql
+
+下载驱动：`go get -u github.com/go-sql-driver/mysql`
+
+测试代码：
+```package main
+
+import (
+	"database/sql"
+	"fmt"
+
+	_ "github.com/go-sql-driver/mysql"
+)
+
+var db *sql.DB
+
+func initDB() (err error) {
+	dsn := "remote:ZZzz.123@tcp(mysql.resvz.com:13306)/test"
+	db, err = sql.Open("mysql", dsn)
+	if err != nil {
+		return
+	}
+	err = db.Ping()
+	db.SetMaxOpenConns(10)
+	db.SetMaxIdleConns(2)
+	return
+}
+
+type spec struct {
+	province string
+	play     string
+	money    string
+	num      string
+}
+
+func main() {
+	err := initDB()
+	if err != nil {
+		fmt.Printf("链接数据库失败：%v\n", err)
+	}
+	queryLine()
+	queryMoreLine()
+	insert()
+	sql := "fewfewf"
+	execTransction(&sql)
+}
+
+// 查询单条数据
+func queryLine() {
+	sqlStr := "select * from lott_spec where province = 21"
+	row := db.QueryRow(sqlStr)
+	var s spec
+	row.Scan(&s.province, &s.play, &s.money, &s.num)
+	fmt.Printf("%#v\n", s)
+}
+
+// 查询多条数据
+func queryMoreLine() {
+	sqlStr := "select * from lott_spec"
+	rows, err := db.Query(sqlStr)
+	if err != nil {
+		fmt.Printf("查询失败：%v\n", err)
+		return
+	}
+	for rows.Next() {
+		var s spec
+		rows.Scan(&s.province, &s.play, &s.money, &s.num)
+		fmt.Printf("%#v\n", s)
+	}
+}
+
+func insert() {
+	sqlStr := "INSERT INTO `lott_spec` (`province`, `play`, `money`, `num`) VALUES ('33', '幸运时刻', '5', '60')"
+	ret, err := db.Exec(sqlStr)
+	if err != nil {
+		fmt.Printf("fail:%v", err)
+	}
+	id, _ := ret.LastInsertId()
+	fmt.Printf("last insert id：%v\n", id)
+	rows, _ := ret.RowsAffected()
+	fmt.Printf("insert row num：%v\n", rows)
+}
+
+func execTransction(sql *string) {
+	tx, err := db.Begin()
+	if err != nil {
+		fmt.Printf("begin faild")
+		return
+	}
+	ret, errExex := tx.Exec(*sql)
+	if errExex != nil {
+		fmt.Printf("exec faild")
+		tx.Rollback()
+		return
+	}
+	tx.Commit()
+	affected, _ := ret.RowsAffected()
+	fmt.Printf("affected %d rows", affected)
+}
+```
