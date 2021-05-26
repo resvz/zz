@@ -22,7 +22,7 @@ import (
 var db *sql.DB
 
 func initDB() (err error) {
-	dsn := "remote:ZZzz.123@tcp(mysql.resvz.com:13306)/test"
+	dsn := "root:root@tcp(localhost:13306)/test"
 	db, err = sql.Open("mysql", dsn)
 	if err != nil {
 		return
