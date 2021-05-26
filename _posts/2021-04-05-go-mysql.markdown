@@ -10,7 +10,8 @@ categories: mysql
 下载驱动：`go get -u github.com/go-sql-driver/mysql`
 
 测试代码：
-```package main
+```
+package main
 
 import (
 	"database/sql"
