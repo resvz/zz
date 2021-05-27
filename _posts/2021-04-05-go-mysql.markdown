@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Go链接mysql"
 date:   2021-04-05 17:05:30 +0800
 categories: mysql
