@@ -10,7 +10,7 @@ categories: mysql
 下载驱动：`go get -u github.com/go-sql-driver/mysql`
 
 测试代码：
-```
+{% highlight go %}
 package main
 
 import (
@@ -104,4 +104,4 @@ func execTransction(sql *string) {
 	affected, _ := ret.RowsAffected()
 	fmt.Printf("affected %d rows", affected)
 }
-```
+{% endhighlight %}
