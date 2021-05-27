@@ -53,7 +53,5 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-markdown: kramdown
-highlighter: rouge
-kramdown:
-  syntax_highlighter: rouge
+theme: just-the-docs
+remote_theme: pmarsceill/just-the-docs
