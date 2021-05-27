@@ -53,5 +53,5 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-theme: just-the-docs
-remote_theme: pmarsceill/just-the-docs
+theme: jekyll-text-theme
+remote_theme: kitian616/jekyll-TeXt-theme
