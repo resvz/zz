@@ -1,5 +1,5 @@
 ---
-title:  "Go链接mysql"
+title:  "Go使用RocketMQ"
 tags: Go RocketMQ
 ---
 ## rocketmq client
