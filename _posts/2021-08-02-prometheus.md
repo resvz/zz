@@ -4,7 +4,9 @@ tags: prometheus 监控
 ---
 # 安装prometheus
 ## 下载prometheus
-```https://prometheus.io/download/```
+```
+https://prometheus.io/download/
+```
 ## 安装启动
 
 ```
@@ -14,7 +16,9 @@ mv /usr/local/prometheus-2.28.1.linux-amd64/ /usr/local/prometheus
 ```
 
 ## 配置systemctl
-```vim /usr/lib/systemd/system/prometheus.service```
+```
+vim /usr/lib/systemd/system/prometheus.service
+```
 
 ```
 [Unit]
@@ -30,7 +34,9 @@ WantedBy=multi-user.target
 ```
 
 ## 验证
-```ss -naltp | grep 9090```
+```
+ss -naltp | grep 9090
+```
 ![avatar](/img/20210802172848.jpg)
 
 浏览器打开ip:9090
@@ -38,7 +44,9 @@ WantedBy=multi-user.target
 
 # 监控主机
 ## 下载node_exporter
-```https://github.com/prometheus/node_exporter/releases```
+```
+https://github.com/prometheus/node_exporter/releases
+```
 ## 安装启动
 
 ```
@@ -48,7 +56,9 @@ nohup /usr/local/node_exporter/node_exporter &
 ```
 
 ## 修改prometheus配置文件
-```vim /usr/local/prometheus/prometheus.yml```
+```
+vim /usr/local/prometheus/prometheus.yml
+```
 ![avatar](/img/20210802182158.jpg)
 ## 重启prometheus
 
@@ -64,7 +74,9 @@ prometheus界面选择 Status -> Targets
 ![avatar](/img/20210802182555.jpg)
 
 ## 下载grafana
-```https://grafana.com/grafana/download```
+```
+https://grafana.com/grafana/download
+```
 
 
 
