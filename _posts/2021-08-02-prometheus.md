@@ -4,20 +4,18 @@ tags: prometheus 监控
 ---
 # 安装prometheus
 ## 下载prometheus
-```
-https://prometheus.io/download/
-```
+<https://prometheus.io/download/>
 ## 安装启动
 
 ```
-tar xf prometheus-2.28.1.linux-amd64.tar.gz -C /usr/local/
-mv /usr/local/prometheus-2.28.1.linux-amd64/ /usr/local/prometheus
-/usr/local/prometheus/prometheus --config.file="/usr/local/prometheus/prometheus.yml"
+# tar xf prometheus-2.28.1.linux-amd64.tar.gz -C /usr/local/
+# mv /usr/local/prometheus-2.28.1.linux-amd64/ /usr/local/prometheus
+# /usr/local/prometheus/prometheus --config.file="/usr/local/prometheus/prometheus.yml"
 ```
 
 ## 配置systemctl
 ```
-vim /usr/lib/systemd/system/prometheus.service
+# vim /usr/lib/systemd/system/prometheus.service
 ```
 
 ```
@@ -35,7 +33,7 @@ WantedBy=multi-user.target
 
 ## 验证
 ```
-ss -naltp | grep 9090
+# ss -naltp | grep 9090
 ```
 ![avatar](/img/20210802172848.jpg)
 
@@ -44,15 +42,14 @@ ss -naltp | grep 9090
 
 # 监控主机
 ## 下载node_exporter
-```
-https://github.com/prometheus/node_exporter/releases
-```
+
+<https://github.com/prometheus/node_exporter/releases>
 ## 安装启动
 
 ```
-tar xf node_exporter-1.2.0.linux-amd64.tar.gz -C /usr/local/
-mv /usr/local/node_exporter-1.2.0.linux-amd64/ node_exporter
-nohup /usr/local/node_exporter/node_exporter &
+# tar xf node_exporter-1.2.0.linux-amd64.tar.gz -C /usr/local/
+# mv /usr/local/node_exporter-1.2.0.linux-amd64/ node_exporter
+# nohup /usr/local/node_exporter/node_exporter &
 ```
 
 ## 修改prometheus配置文件
@@ -63,8 +60,8 @@ vim /usr/local/prometheus/prometheus.yml
 ## 重启prometheus
 
 ```
-pkill prometheus
-/usr/local/prometheus/prometheus --config.file="/usr/local/prometheus/prometheus.yml" &
+# pkill prometheus
+# /usr/local/prometheus/prometheus --config.file="/usr/local/prometheus/prometheus.yml" &
 ```
 
 ## 验证
@@ -74,9 +71,7 @@ prometheus界面选择 Status -> Targets
 ![avatar](/img/20210802182555.jpg)
 
 ## 下载grafana
-```
-https://grafana.com/grafana/download
-```
+<https://grafana.com/grafana/download>
 
 
 
