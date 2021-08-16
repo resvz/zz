@@ -12,3 +12,8 @@ github：```https://github.com/apache/rocketmq-client-go```
 {% highlight go %}
 
 {% endhighlight %}
+
+## 错误解决
+### topic not exist
+broker 启动参数加上```autoCreateTopicEnable=true```
+或手动创建topic
